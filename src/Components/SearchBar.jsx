@@ -6,6 +6,7 @@ export default function SearchBar() {
   const {handleSearch , resetSearch , searchResult} = useSearch();
 
   const [query , setQuery ] = useState('');
+  
   const handleSubmit= (e) =>{
     e.preventDefault()
     if(!query.trim()) return;

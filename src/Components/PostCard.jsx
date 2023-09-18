@@ -24,7 +24,7 @@ export default function PostCard({post , onDeleteClick}) {
 <div className='flex space-x-3'>
     <Link to={`/update-post/${slug}`} className="w-8 h-8 rounded-full bg-blue-400
      hover:bg-blue-600 flex justify-center items-center"><BsPencilSquare /></Link>
-    <button onClick={() => onDeleteClick(post)} className="w-8 h-8 rounded-full bg-blue-400
+    <button onClick={onDeleteClick} className="w-8 h-8 rounded-full bg-blue-400
      hover:bg-blue-600 flex justify-center items-center"><BsFillTrashFill/></button>
 </div>
 
